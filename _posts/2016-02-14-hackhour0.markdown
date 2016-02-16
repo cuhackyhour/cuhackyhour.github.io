@@ -14,5 +14,6 @@ categories: events
 This is the innagural Hacky Hour event. Anyone who’s interested,
 should come along - not just ResBaz participants. RSVP is not
 necessary, but feel free to let Matthias Liffers
-([@mpfl](https://twitter.com/mpfl)) know you’re coming so he knows to
-look out for you.
+([@mpfl](https://twitter.com/mpfl)) or Rob Syme
+([@robsyme](https://twitter.com/robsyme)) know you’re coming so we
+know to look out for you.
