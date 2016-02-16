@@ -9,8 +9,8 @@
 title: CU Hacky Hour
 email: rob.syme@gmail.com
 description: A regular meeting for people working with data at Curtin.
-baseurl: /hackhour # the subpath of your site, e.g. /blog
-url: "http://robsyme.github.io" # the base hostname & protocol for your site
+baseurl: / # the subpath of your site, e.g. /blog
+url: "http://cuhackyhour.github.io/" # the base hostname & protocol for your site
 twitter_username: CUHackyHour
 instagram_username: CUHackyHour
 timezone: Australia/Perth
