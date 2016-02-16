@@ -1,0 +1,21 @@
+<!-- Footer -->
+<section id="footer">
+    <ul class="icons">
+        {% if site.twitter_username %}<li><a href="https://www.twitter.com/{{ site.twitter_username }}" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>{% endif %}
+        {% if site.instagram_username %}<li><a href="https://www.instagram.com/{{ site.instagram_username }}" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>{% endif %}
+        {% if site.github_username %}<li><a href="#" class="icon alt fa-github"><span class="label">GitHub</span></a></li>{% endif %}
+        <li><a href="mailto:{{ site.email }}" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
+    </ul>
+    <ul class="copyright">
+        <li>&copy; Rob Syme 2015</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+    </ul>
+</section>
+
+
+<!-- Scripts -->
+<script src="{{ site.baseurl}}/js/jquery.min.js"></script>
+<script src="{{ site.baseurl}}/js/jquery.scrolly.min.js"></script>
+<script src="{{ site.baseurl}}/js/skel.min.js"></script>
+<script src="{{ site.baseurl}}/js/util.js"></script>
+<!--[if lte IE 8]><script src="/js/ie/respond.min.js"></script><![endif]-->
+<script src="{{ site.baseurl}}/js/main.js"></script>

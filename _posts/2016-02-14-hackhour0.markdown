@@ -1,0 +1,18 @@
+---
+layout: event
+title:  "Hacky Hour 0"
+date:   2016-02-14 22:32:12 +0800
+start: 2016-02-24 15:00:00 +0800
+end: 2016-02-24 16:00:00 +0800
+location: Common Ground
+address: Curtin University, Kent St, Bentley
+latitude: -32.0050663
+longitude: 115.8932726
+categories: events
+---
+
+This is the innagural Hacky Hour event. Anyone who’s interested,
+should come along - not just ResBaz participants. RSVP is not
+necessary, but feel free to let Matthias Liffers
+([@mpfl](https://twitter.com/mpfl)) know you’re coming so he knows to
+look out for you.
