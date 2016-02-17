@@ -959,10 +959,10 @@
 	#header {
 		@include padding(9em, 0, (0,0,_size(element-margin),0));
 		@include dark(#4686a0);
-        background-attachment:	fixed,							fixed,							fixed;
+        background-attachment:	fixed,							fixed,							fixed                                            , fixed;
 		background-image:		url("images/overlay2.png"), url("images/overlay3.svg"), linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1.0) ), url("images/laptop.jpg");
-		background-position:	top left,						center center,					center center;
-		background-size:		auto,							cover,							cover;
+		background-position:	top left,						center center,					center center                                    , top left;
+		background-size:		auto,							cover,							cover											 , cover;
 		overflow: hidden;
 		position: relative;
 		text-align: center;
