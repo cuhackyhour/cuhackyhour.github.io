@@ -7,7 +7,10 @@ layout: front
       <div class="6u 12u$(medium)">
         <header class="major"><h2>Upcoming Hacky Hours</h2></header>
         <ul class="post-list">
-          {% for event in site.categories.events %}
+          {% for event in site.categories.events reversed %}
+		  {% capture nowunix %}{{'now' | date: "%s"}}{% endcapture %}
+		  {% capture eventtime %}{{event.start | date: "%s"}}{% endcapture %}
+		  {% if eventtime > nowunix %}
           <li vocab="http://schema.org/" typeof="Event">
             <h3>
               <a class="post-link" property="url" href="{{ event.url | prepend: site.baseurl }}"><span property="name">{{ event.title }}</span></a>
@@ -25,6 +28,21 @@ layout: front
 			  Where: <span property="name">{{ event.location }}</span> - <span property="address">{{ event.address }}</span>
 			</div>
           </li>
+          {% endif %}
+          {% endfor %}
+        </ul>
+        <header class="major"><h2>Previous Hacky Hours</h2></header>
+        <ul class="post-list">
+          {% for event in site.categories.events reversed %}
+		  {% capture nowunix %}{{'now' | date: "%s"}}{% endcapture %}
+		  {% capture eventtime %}{{event.start | date: "%s"}}{% endcapture %}
+		  {% if eventtime < nowunix %}
+          <li vocab="http://schema.org/" typeof="Event">
+            <h3>
+              <a class="post-link" property="url" href="{{ event.url | prepend: site.baseurl }}"><span property="name">{{ event.title }}</span></a>
+            </h3>
+          </li>
+          {% endif %}
           {% endfor %}
         </ul>
         <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
