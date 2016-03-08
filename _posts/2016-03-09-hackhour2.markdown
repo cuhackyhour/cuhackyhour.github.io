@@ -9,6 +9,7 @@ address: Curtin University, Kent St, Bentley
 latitude: -32.0050663
 longitude: 115.8932726
 categories: events
+permalink: /events/2016/03/09/hackyhour2.html
 ---
 
 Come along to code, or talk code. Are you having problems
