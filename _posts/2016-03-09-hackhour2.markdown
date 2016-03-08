@@ -1,7 +1,7 @@
 ---
 layout: event
 title:  "Hacky Hour 2"
-date:   2016-03-09 10:00:00 +0800
+date:   2016-03-07 10:00:00 +0800
 start: 2016-03-09 15:00:00 +0800
 end: 2016-03-09 16:00:00 +0800
 location: Common Ground
