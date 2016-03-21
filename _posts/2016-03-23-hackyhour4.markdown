@@ -1,0 +1,18 @@
+---
+layout: event
+title:  "Hacky Hour 4"
+date:   2016-03-21 08:00:00 +0800
+start: 2016-03-23 15:00:00 +0800
+end: 2016-03-23 16:00:00 +0800
+location: Common Ground
+address: Curtin University, Kent St, Bentley
+latitude: -32.0050663
+longitude: 115.8932726
+categories: events
+---
+
+Come along to code, or talk code. Are you having problems
+with a coding project of yours? Bring along your laptop and someone
+might be able to give you a hand. No RSVP necessary, just rock up!
+
+Follow [@CUHackyHour](https://twitter.com/CUHackyHour) for updates.
