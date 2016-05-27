@@ -2,52 +2,28 @@
 layout: front
 ---
 <section id="one" class="main style1">
-  <div class="container">
-    <div class="row 150%">
-      <div class="6u 12u$(medium)">
-        <header class="major"><h2>Upcoming Hacky Hours</h2></header>
-        <ul class="post-list">
-          {% for event in site.categories.events reversed %}
-		  {% capture nowunix %}{{'now' | date: "%s"}}{% endcapture %}
-		  {% capture eventtime %}{{event.start | date: "%s"}}{% endcapture %}
-		  {% if eventtime > nowunix %}
-          <li vocab="http://schema.org/" typeof="Event">
-            <h3>
-              <a class="post-link" property="url" href="{{ event.url | prepend: site.baseurl }}"><span property="name">{{ event.title }}</span></a>
-            </h3>
-			<div>
-			  When: <span property="startDate" content="{{ event.start | date_to_xmlschema }}">{{ event.start | date: "%A %b %-d %H:%M" }}</span>-<span property="endDate" content="{{ event.end | date_to_xmlschema }}">{{ event.end | date: "%H:%M"}}</span>
-			</div>
-			<div property="location" typeof="Place">
-			  {% if event.latitude && event.longitude %}
-			  <span property="geo" typeof="GeoCoordinates">
-				<meta property="latitude" content="{{ event.latitude }}">
-				<meta property="longitude" content="{{ event.longitude }}">
-			  </span>
-			  {% endif %}
-			  Where: <span property="name">{{ event.location }}</span> - <span property="address">{{ event.address }}</span>
-			</div>
-          </li>
-          {% endif %}
-          {% endfor %}
-        </ul>
-        <header class="major"><h2>Previous Hacky Hours</h2></header>
-        <ul class="post-list">
-          {% for event in site.categories.events reversed %}
-		  {% capture nowunix %}{{'now' | date: "%s"}}{% endcapture %}
-		  {% capture eventtime %}{{event.start | date: "%s"}}{% endcapture %}
-		  {% if eventtime < nowunix %}
-          <li vocab="http://schema.org/" typeof="Event">
-            <h3>
-              <a class="post-link" property="url" href="{{ event.url | prepend: site.baseurl }}"><span property="name">{{ event.title }}</span></a>
-            </h3>
-          </li>
-          {% endif %}
-          {% endfor %}
-        </ul>
-        <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-      </div>
+    <div class="container">
+	<div class="row 150%">
+	    <div class="6u 12u$(medium)">
+		<header class="major">
+		    <h2>Regular Weekly Meetup</h2>
+		</header>
+		<p>
+		    Come along to the Common Ground Cafe on <strong> Wednesdays, 3pm-4pm </strong>.
+		</p>
+		<p>
+		    All levels of expertise are
+		    welcome. All faculties welcome.  Bring a problem,
+		    an idea, a work-in-progress, a finished project,
+		    or just your enthusiasm.
+		</p>
+	    </div>
+	    <div class="6u 12u$(medium) important(medium)">
+		<span class="image fit">
+		    <div id="map"></div>
+		</span>
+	    </div>
+	</div>
     </div>
-  </div>
 </section>
 
